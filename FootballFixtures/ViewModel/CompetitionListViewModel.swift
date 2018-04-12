@@ -37,8 +37,7 @@ class CompetitionListViewModel {
         var competitions: [Competition] = []
         while !rawModel.isEmpty {
             let match = rawModel.first!
-            var matchesArray = [match]
-            let _ = rawModel.dropFirst()
+            var matchesArray: [Match] = []
             for element in rawModel {
                 if element.competition.dbid == match.competition.dbid {
                     matchesArray.append(element)

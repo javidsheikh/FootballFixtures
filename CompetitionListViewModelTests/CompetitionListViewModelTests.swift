@@ -30,6 +30,15 @@ class CompetitionListViewModelTests: XCTestCase {
         sut.initCompetitionViewModelArray(with: &sut.rawData!)
         XCTAssertNotNil(sut.competitions)
     }
+
+    func test_totalMatchesEqualToRawDataMatchNumber() {
+        sut.initDataFetch()
+        let totalMatchesFromRawDataCount = sut.rawData?.count
+        sut.initCompetitionViewModelArray(with: &sut.rawData!)
+        let matchesFromCompetitionsArray = sut.competitions?.map{ $0.matches! }
+        let matchesFromCompetitionsArrayCount = Array(matchesFromCompetitionsArray!.joined()).count
+        XCTAssertEqual(totalMatchesFromRawDataCount, matchesFromCompetitionsArrayCount)
+    }
     
     func test_sortCompetitionByOrder() {
         sut.initDataFetch()
