@@ -11,20 +11,31 @@ import Foundation
 
 class CompetitionListViewModel {
 
-//    lazy var matchesListViewModel: [Competition] = []
+    var rawData: [Match]?
+    var competitions: [Competition]?
+    var cellViewModels: [CompetitionViewModel] = []
+    var numberOfRows: Int {
+        return cellViewModels.count
+    }
+    var reloadTableView: (() -> Void)?
+    var diplayErrorAlertWithMessage: ((String) -> Void)?
 
-    init() {
-        guard var rawModel = DataFetchService.fetchMatchesData() else {
-            // TODO handle fetch data error
+    func initDataFetch() {
+        guard var rawModel = DataFetchService.fetchMatchesData(fromJSONFile: "matches") else {
+            diplayErrorAlertWithMessage?("Unable to fetch competition list")
             return
         }
-        initCompetitionModel(with: &rawModel)
+        rawData = rawModel
+        initCompetitionViewModelArray(with: &rawModel)
     }
 
-    fileprivate func initCompetitionModel(with rawModel: inout [Match]) {
+    func getViewModelForCell(with indexPath: IndexPath) -> CompetitionViewModel {
+        return cellViewModels[indexPath.row]
+    }
+
+    func initCompetitionViewModelArray(with rawModel: inout [Match]) {
         var competitions: [Competition] = []
         while !rawModel.isEmpty {
-            print("Raw Model count: ", rawModel.count)
             let match = rawModel.first!
             var matchesArray = [match]
             let _ = rawModel.dropFirst()
@@ -37,16 +48,20 @@ class CompetitionListViewModel {
             competitions.append(competition)
             rawModel = rawModel.filter { $0.competition.dbid != match.competition.dbid }
         }
-        sortCompetitionModelByOrder(competitions)
+        self.competitions = competitions
+        sortCompetitionsByOrder(competitions)
     }
 
-    fileprivate func sortCompetitionModelByOrder(_ competitions: [Competition]) {
+    func sortCompetitionsByOrder(_ competitions: [Competition]) {
         let sorted = competitions.sorted { $0.ordering < $1.ordering }
-        initMatchesListViewModels(with: sorted)
+        self.competitions = sorted
+        initCellViewModels(with: sorted)
     }
 
-    fileprivate func initMatchesListViewModels(with competitions: [Competition]) {
-
+    func initCellViewModels(with competitions: [Competition]) {
+        cellViewModels = competitions.map {
+            CompetitionViewModel(competitionName: $0.name, matches: $0.matches!)
+        }
     }
 
 

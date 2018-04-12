@@ -13,9 +13,24 @@ struct Match {
         case competition, start, homeTeam, awayTeam
     }
     let competition: Competition
-    let start: Int
+    let kickOff: Date
     let homeTeam: Team
     let awayTeam: Team
+}
+
+extension Match: Decodable {
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let start = try  container.decode(Int.self, forKey: .start)
+        kickOff = Match.getDate(from: start)
+        competition = try container.decode(Competition.self, forKey: .competition)
+        homeTeam = try container.decode(Team.self, forKey: .homeTeam)
+        awayTeam = try container.decode(Team.self, forKey: .awayTeam)
+    }
+
+    fileprivate static func getDate(from start: Int) -> Date {
+        return Date(timeIntervalSince1970: Double(start/1000))
+    }
 }
 
 struct Competition: Decodable {
@@ -27,15 +42,5 @@ struct Competition: Decodable {
 
 struct Team: Decodable {
     let name: String
-}
-
-extension Match: Decodable {
-    init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        start = try  container.decode(Int.self, forKey: .start)
-        competition = try container.decode(Competition.self, forKey: .competition)
-        homeTeam = try container.decode(Team.self, forKey: .homeTeam)
-        awayTeam = try container.decode(Team.self, forKey: .awayTeam)
-    }
 }
 

@@ -1,5 +1,5 @@
 //
-//  Competition.swift
+//  CustomError.swift
 //  FootballFixtures
 //
 //  Created by Javid Sheikh on 12/04/2018.
@@ -8,3 +8,6 @@
 
 import Foundation
 
+enum CustomError: Error {
+    case error(String)
+}

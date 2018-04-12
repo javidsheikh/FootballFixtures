@@ -10,8 +10,8 @@ import Foundation
 
 class DataFetchService {
 
-    static func fetchMatchesData() -> [Match]? {
-        if let path = Bundle.main.path(forResource: "matches", ofType: "json") {
+    static func fetchMatchesData(fromJSONFile fileName: String) -> [Match]? {
+        if let path = Bundle.main.path(forResource: fileName, ofType: "json") {
             do {
                 let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
                 let matches = try JSONDecoder().decode([Match].self, from: data)

@@ -8,34 +8,81 @@
 
 /* Begin PBXBuildFile section */
 		F955BD6C207F699D00AD20B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD6B207F699D00AD20B8 /* AppDelegate.swift */; };
-		F955BD6E207F699D00AD20B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD6D207F699D00AD20B8 /* ViewController.swift */; };
 		F955BD71207F699D00AD20B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F955BD6F207F699D00AD20B8 /* Main.storyboard */; };
 		F955BD73207F699D00AD20B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F955BD72207F699D00AD20B8 /* Assets.xcassets */; };
 		F955BD76207F699D00AD20B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F955BD74207F699D00AD20B8 /* LaunchScreen.storyboard */; };
 		F955BD82207F69EC00AD20B8 /* DataFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD81207F69EC00AD20B8 /* DataFetchService.swift */; };
-		F955BD85207F6A1000AD20B8 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD84207F6A1000AD20B8 /* Competition.swift */; };
 		F955BD87207F6A1B00AD20B8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD86207F6A1B00AD20B8 /* Match.swift */; };
 		F955BD89207F6A2C00AD20B8 /* matches.json in Resources */ = {isa = PBXBuildFile; fileRef = F955BD88207F6A2C00AD20B8 /* matches.json */; };
 		F955BD8C207F7AE200AD20B8 /* CompetitionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */; };
+		F955BD90207FA98F00AD20B8 /* CompetitionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD8F207FA98F00AD20B8 /* CompetitionListTableViewController.swift */; };
+		F955BD94207FAC1C00AD20B8 /* CompetitionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD93207FAC1C00AD20B8 /* CompetitionViewModel.swift */; };
+		F955BD96207FAF1B00AD20B8 /* CompetitionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD95207FAF1B00AD20B8 /* CompetitionTableViewController.swift */; };
+		F955BD98207FB1E300AD20B8 /* Date+ToPrettyString.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD97207FB1E300AD20B8 /* Date+ToPrettyString.swift */; };
+		F955BDA1207FBA9100AD20B8 /* CompetitionListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BDA0207FBA9100AD20B8 /* CompetitionListViewModelTests.swift */; };
+		F955BDAF207FBAA200AD20B8 /* CompetitionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BDAE207FBAA200AD20B8 /* CompetitionViewModelTests.swift */; };
+		F955BDB7207FC41500AD20B8 /* String+ToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BDB6207FC41500AD20B8 /* String+ToDate.swift */; };
+		F9D8D1C4207FC76700277EC9 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8D1C3207FC76700277EC9 /* CustomError.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F955BDA3207FBA9100AD20B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F955BD60207F699D00AD20B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F955BD67207F699D00AD20B8;
+			remoteInfo = FootballFixtures;
+		};
+		F955BDB1207FBAA200AD20B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F955BD60207F699D00AD20B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F955BD67207F699D00AD20B8;
+			remoteInfo = FootballFixtures;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F955BD68207F699D00AD20B8 /* FootballFixtures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballFixtures.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F955BD6B207F699D00AD20B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F955BD6D207F699D00AD20B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F955BD70207F699D00AD20B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F955BD72207F699D00AD20B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F955BD75207F699D00AD20B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F955BD77207F699D00AD20B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F955BD81207F69EC00AD20B8 /* DataFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchService.swift; sourceTree = "<group>"; };
-		F955BD84207F6A1000AD20B8 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		F955BD86207F6A1B00AD20B8 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		F955BD88207F6A2C00AD20B8 /* matches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = matches.json; sourceTree = "<group>"; };
 		F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionListViewModel.swift; sourceTree = "<group>"; };
+		F955BD8F207FA98F00AD20B8 /* CompetitionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionListTableViewController.swift; sourceTree = "<group>"; };
+		F955BD93207FAC1C00AD20B8 /* CompetitionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionViewModel.swift; sourceTree = "<group>"; };
+		F955BD95207FAF1B00AD20B8 /* CompetitionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionTableViewController.swift; sourceTree = "<group>"; };
+		F955BD97207FB1E300AD20B8 /* Date+ToPrettyString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToPrettyString.swift"; sourceTree = "<group>"; };
+		F955BD9E207FBA9100AD20B8 /* CompetitionListViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompetitionListViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F955BDA0207FBA9100AD20B8 /* CompetitionListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionListViewModelTests.swift; sourceTree = "<group>"; };
+		F955BDA2207FBA9100AD20B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F955BDAC207FBAA200AD20B8 /* CompetitionViewModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompetitionViewModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F955BDAE207FBAA200AD20B8 /* CompetitionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionViewModelTests.swift; sourceTree = "<group>"; };
+		F955BDB0207FBAA200AD20B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F955BDB6207FC41500AD20B8 /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToDate.swift"; sourceTree = "<group>"; };
+		F9D8D1C3207FC76700277EC9 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F955BD65207F699D00AD20B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955BD9B207FBA9100AD20B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955BDA9207FBAA200AD20B8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				F955BD6A207F699D00AD20B8 /* FootballFixtures */,
+				F955BD9F207FBA9100AD20B8 /* CompetitionListViewModelTests */,
+				F955BDAD207FBAA200AD20B8 /* CompetitionViewModelTests */,
 				F955BD69207F699D00AD20B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				F955BD68207F699D00AD20B8 /* FootballFixtures.app */,
+				F955BD9E207FBA9100AD20B8 /* CompetitionListViewModelTests.xctest */,
+				F955BDAC207FBAA200AD20B8 /* CompetitionViewModelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,9 +117,10 @@
 			children = (
 				F955BD8A207F6A2F00AD20B8 /* Data */,
 				F955BD80207F69CB00AD20B8 /* Services */,
+				F955BD7D207F69AB00AD20B8 /* Model */,
 				F955BD7F207F69BF00AD20B8 /* ViewModel */,
 				F955BD7E207F69B900AD20B8 /* View */,
-				F955BD7D207F69AB00AD20B8 /* Model */,
+				F955BD99207FB32800AD20B8 /* Extensions */,
 				F955BD6B207F699D00AD20B8 /* AppDelegate.swift */,
 				F955BD77207F699D00AD20B8 /* Info.plist */,
 			);
@@ -78,7 +130,6 @@
 		F955BD7D207F69AB00AD20B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F955BD84207F6A1000AD20B8 /* Competition.swift */,
 				F955BD86207F6A1B00AD20B8 /* Match.swift */,
 			);
 			path = Model;
@@ -87,7 +138,8 @@
 		F955BD7E207F69B900AD20B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F955BD6D207F699D00AD20B8 /* ViewController.swift */,
+				F955BD8F207FA98F00AD20B8 /* CompetitionListTableViewController.swift */,
+				F955BD95207FAF1B00AD20B8 /* CompetitionTableViewController.swift */,
 				F955BD83207F69FB00AD20B8 /* Assets */,
 			);
 			path = View;
@@ -97,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */,
+				F955BD93207FAC1C00AD20B8 /* CompetitionViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,6 +180,34 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		F955BD99207FB32800AD20B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F955BD97207FB1E300AD20B8 /* Date+ToPrettyString.swift */,
+				F955BDB6207FC41500AD20B8 /* String+ToDate.swift */,
+				F9D8D1C3207FC76700277EC9 /* CustomError.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F955BD9F207FBA9100AD20B8 /* CompetitionListViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F955BDA0207FBA9100AD20B8 /* CompetitionListViewModelTests.swift */,
+				F955BDA2207FBA9100AD20B8 /* Info.plist */,
+			);
+			path = CompetitionListViewModelTests;
+			sourceTree = "<group>";
+		};
+		F955BDAD207FBAA200AD20B8 /* CompetitionViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				F955BDAE207FBAA200AD20B8 /* CompetitionViewModelTests.swift */,
+				F955BDB0207FBAA200AD20B8 /* Info.plist */,
+			);
+			path = CompetitionViewModelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +228,42 @@
 			productReference = F955BD68207F699D00AD20B8 /* FootballFixtures.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F955BD9D207FBA9100AD20B8 /* CompetitionListViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F955BDA5207FBA9100AD20B8 /* Build configuration list for PBXNativeTarget "CompetitionListViewModelTests" */;
+			buildPhases = (
+				F955BD9A207FBA9100AD20B8 /* Sources */,
+				F955BD9B207FBA9100AD20B8 /* Frameworks */,
+				F955BD9C207FBA9100AD20B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F955BDA4207FBA9100AD20B8 /* PBXTargetDependency */,
+			);
+			name = CompetitionListViewModelTests;
+			productName = CompetitionListViewModelTests;
+			productReference = F955BD9E207FBA9100AD20B8 /* CompetitionListViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F955BDAB207FBAA200AD20B8 /* CompetitionViewModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F955BDB3207FBAA200AD20B8 /* Build configuration list for PBXNativeTarget "CompetitionViewModelTests" */;
+			buildPhases = (
+				F955BDA8207FBAA200AD20B8 /* Sources */,
+				F955BDA9207FBAA200AD20B8 /* Frameworks */,
+				F955BDAA207FBAA200AD20B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F955BDB2207FBAA200AD20B8 /* PBXTargetDependency */,
+			);
+			name = CompetitionViewModelTests;
+			productName = CompetitionViewModelTests;
+			productReference = F955BDAC207FBAA200AD20B8 /* CompetitionViewModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,6 +277,16 @@
 					F955BD67207F699D00AD20B8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+					};
+					F955BD9D207FBA9100AD20B8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F955BD67207F699D00AD20B8;
+					};
+					F955BDAB207FBAA200AD20B8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F955BD67207F699D00AD20B8;
 					};
 				};
 			};
@@ -177,6 +304,8 @@
 			projectRoot = "";
 			targets = (
 				F955BD67207F699D00AD20B8 /* FootballFixtures */,
+				F955BD9D207FBA9100AD20B8 /* CompetitionListViewModelTests */,
+				F955BDAB207FBAA200AD20B8 /* CompetitionViewModelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +322,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F955BD9C207FBA9100AD20B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955BDAA207FBAA200AD20B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -200,16 +343,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F955BD6E207F699D00AD20B8 /* ViewController.swift in Sources */,
 				F955BD6C207F699D00AD20B8 /* AppDelegate.swift in Sources */,
+				F955BD96207FAF1B00AD20B8 /* CompetitionTableViewController.swift in Sources */,
+				F955BD90207FA98F00AD20B8 /* CompetitionListTableViewController.swift in Sources */,
+				F955BD98207FB1E300AD20B8 /* Date+ToPrettyString.swift in Sources */,
 				F955BD82207F69EC00AD20B8 /* DataFetchService.swift in Sources */,
+				F9D8D1C4207FC76700277EC9 /* CustomError.swift in Sources */,
 				F955BD87207F6A1B00AD20B8 /* Match.swift in Sources */,
+				F955BD94207FAC1C00AD20B8 /* CompetitionViewModel.swift in Sources */,
 				F955BD8C207F7AE200AD20B8 /* CompetitionListViewModel.swift in Sources */,
-				F955BD85207F6A1000AD20B8 /* Competition.swift in Sources */,
+				F955BDB7207FC41500AD20B8 /* String+ToDate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955BD9A207FBA9100AD20B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F955BDA1207FBA9100AD20B8 /* CompetitionListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F955BDA8207FBAA200AD20B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F955BDAF207FBAA200AD20B8 /* CompetitionViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F955BDA4207FBA9100AD20B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F955BD67207F699D00AD20B8 /* FootballFixtures */;
+			targetProxy = F955BDA3207FBA9100AD20B8 /* PBXContainerItemProxy */;
+		};
+		F955BDB2207FBAA200AD20B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F955BD67207F699D00AD20B8 /* FootballFixtures */;
+			targetProxy = F955BDB1207FBAA200AD20B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F955BD6F207F699D00AD20B8 /* Main.storyboard */ = {
@@ -368,6 +544,70 @@
 			};
 			name = Release;
 		};
+		F955BDA6207FBA9100AD20B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNNCXYWA32;
+				INFOPLIST_FILE = CompetitionListViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javidSheikh.CompetitionListViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballFixtures.app/FootballFixtures";
+			};
+			name = Debug;
+		};
+		F955BDA7207FBA9100AD20B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNNCXYWA32;
+				INFOPLIST_FILE = CompetitionListViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javidSheikh.CompetitionListViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballFixtures.app/FootballFixtures";
+			};
+			name = Release;
+		};
+		F955BDB4207FBAA200AD20B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNNCXYWA32;
+				INFOPLIST_FILE = CompetitionViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javidSheikh.CompetitionViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballFixtures.app/FootballFixtures";
+			};
+			name = Debug;
+		};
+		F955BDB5207FBAA200AD20B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VNNCXYWA32;
+				INFOPLIST_FILE = CompetitionViewModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.javidSheikh.CompetitionViewModelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FootballFixtures.app/FootballFixtures";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -385,6 +625,24 @@
 			buildConfigurations = (
 				F955BD7B207F699D00AD20B8 /* Debug */,
 				F955BD7C207F699D00AD20B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F955BDA5207FBA9100AD20B8 /* Build configuration list for PBXNativeTarget "CompetitionListViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F955BDA6207FBA9100AD20B8 /* Debug */,
+				F955BDA7207FBA9100AD20B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F955BDB3207FBAA200AD20B8 /* Build configuration list for PBXNativeTarget "CompetitionViewModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F955BDB4207FBAA200AD20B8 /* Debug */,
+				F955BDB5207FBAA200AD20B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
