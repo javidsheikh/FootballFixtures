@@ -21,6 +21,7 @@ struct Match {
 struct Competition: Decodable {
     let name: String
     let ordering: Int
+    let dbid: Int
     var matches: [Match]?
 }
 

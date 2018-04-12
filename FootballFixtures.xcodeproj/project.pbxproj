@@ -16,6 +16,7 @@
 		F955BD85207F6A1000AD20B8 /* Competition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD84207F6A1000AD20B8 /* Competition.swift */; };
 		F955BD87207F6A1B00AD20B8 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD86207F6A1B00AD20B8 /* Match.swift */; };
 		F955BD89207F6A2C00AD20B8 /* matches.json in Resources */ = {isa = PBXBuildFile; fileRef = F955BD88207F6A2C00AD20B8 /* matches.json */; };
+		F955BD8C207F7AE200AD20B8 /* CompetitionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F955BD84207F6A1000AD20B8 /* Competition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Competition.swift; sourceTree = "<group>"; };
 		F955BD86207F6A1B00AD20B8 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		F955BD88207F6A2C00AD20B8 /* matches.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = matches.json; sourceTree = "<group>"; };
+		F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompetitionListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		F955BD7F207F69BF00AD20B8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F955BD8B207F7AE200AD20B8 /* CompetitionListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				F955BD6C207F699D00AD20B8 /* AppDelegate.swift in Sources */,
 				F955BD82207F69EC00AD20B8 /* DataFetchService.swift in Sources */,
 				F955BD87207F6A1B00AD20B8 /* Match.swift in Sources */,
+				F955BD8C207F7AE200AD20B8 /* CompetitionListViewModel.swift in Sources */,
 				F955BD85207F6A1000AD20B8 /* Competition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
